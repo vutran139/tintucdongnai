@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 42px;
+    background-color: #e4deda;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    position: relative;
+    cursor: pointer;
+}
+
+.header-left:hover .header-left-more-menu {
+    display: block;
+}
+
+.header-left-more-menu {
+    position: absolute;
+    top: 100%;
+    width: 1287px;
+    background-color: #daa886;
+    display: none;
+    height: 76px;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-left-more-menu-list {
+    list-style: none;
+}
+
+.header-left-more-menu-list-item {
+    display: inline-block;
+    margin-left: 24px;
+    line-height: 24px;
+    position: relative;
+}
+
+.header-left-more-menu-list-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease-out;
+}
+
+.header-left-more-menu-list-item:hover::after {
+    width: 100%;
+    background-color: sienna;
+}
+
+
+.header-mid {
+    display: inline-flex;
+}
+
+
+.header-mid-logo {
+    height: 42px;
+    display: block;
+    object-fit: cover;
+}
+
+.header-mid-text {
+    text-transform: capitalize;
+    color: #9B582C;
+    line-height: 42px;
+    font-size: 18px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.header-right {
+    float: right;
+    
+}
+
+.header-right__search {
+    line-height: 42px;
+    padding: 0 24px;
+}
+
+.header-right__search:hover {
+    background-color: #daa886;
+    cursor: pointer;
+}
+
+
+.body-container {
+    width: 980px;
+    margin: auto;
+    position: relative;
+}
+
+.body-container-content {
+    width: 100%;
+    display: flex;
+}
+
+.body-container-content-70 {
+    width: 70%;
+    margin-right: 24px;
+    margin-top: 36px;
+    border: 1px solid #eeeeee;
+    height: 1800px;
+}
+
+.body-container-content-70-user {
+    display: flex;
+}
+
+.body-container-content-70-user-box {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-left: 16px;
+    display: block;
+}
+
+.body-container-content-70-user-box-img {
+    width: 40px;
+    height: 40px;
+}
+
+.body-container-content-70-user-title {
+    margin-left: 8px;
+}
+
+.body-container-content-user-title-text {
+    display: block;
+}
+
+.body-container-content-user-title-text-gmail-link {
+    font-style: italic  ;
+}
+
+.body-container-content-70-date {
+    margin-left: 500px;
+}
+
+.body-container-content-70-heading {
+    padding: 0 16px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.body-container-content-text {
+    display: block;
+    padding: 0 16px;
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 16px;
+}
+
+.body-container-content-box {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.body-container-content-box-img {
+    width: 100%;
+}
+
+.body-container-content-box-text {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.body-container-content-title-text {
+    padding-left: 450px;
+    font-style: italic;
+}
+
+.body-container-content-30 {
+    width: 30%;
+    margin-left: 24px;
+    margin-top: 36px;
+    border: 1px solid #eeeeee;
+    height: 346px;
+}
+
+.body-container-content-30-img {
+    width: 100%;
+    padding: 16px;
+}
+
+.body-container-content-30-heading {
+    padding: 0 16px;
+    font-size: 24px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.body-container-content-30-box {
+    width: 100%;
+    display: flex;
+    margin-top: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.body-container-content-30-box::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 15px;
+    width: 89%;
+    height: 1px;
+    background-color: #d9d9d9;
+}
+
+.body-container-content-30-box a {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    line-height: 14px;
+}
+
+.body-container-content-30-box-img {
+    margin-left: 16px;
+    height: 70px;
+    width: 114px;
+}
+
+.body-container-content-30-box a:hover {
+    color: rgb(133, 151, 168);
+}
+
+.body-conect {
+    position: absolute;
+    left: -40px;
+    top: 144px;
+    cursor: pointer;
+}
+
+.body-box {
+    width: 40px;
+    height: 40px;
+    background-color: #477ff7;
+}
+
+.body-box-conect-icon {
+    display: block;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.body-box-img {
+    width: 100%;
+    height: 100%;
+}
